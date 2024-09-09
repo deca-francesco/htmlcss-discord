@@ -303,8 +303,24 @@ button#login {
 }
 
 /* banner bottom */
+.banner_bottom {
+    background-color: var(--dis-section-bg-grey);
+    justify-content: center;
+    text-align: center;
+}
 
+.banner_bottom h3 {
+    background-image: url(../img/stars.svg);
+    background-size: 100%;
+    line-height: 2.8rem;
+    width: 40%;
+    margin: auto;
+}
 
+.banner_bottom button {
+    background-color: var(--dis-btn-colored);
+    color: white;
+}
 /* #endregion main */
 
 /* #region footer */
