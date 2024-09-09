@@ -1,0 +1,220 @@
+/* #region common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* #endregion common */
+
+/* #region debug */
+.debug * {
+    border: 1px dashed black;
+}
+
+.debug body {
+    border: none;
+}
+
+/* header */
+.debug header {
+    background-color: #add8e6;
+    height: 50px;
+    border: none;
+}
+
+.debug header .container {
+    background-color: #daa520;
+    height: 70%;
+}
+
+.debug .logo_header:before {
+    content: "logo";
+}
+
+.debug nav::before {
+    content: "link link link link link";
+}
+
+.debug .login::before {
+    content: "login";
+}
+
+/* main */
+.debug main {
+    border: none;
+}
+.debug .banner_top {
+    height: 300px;
+    background-color: #00008b;
+    border: none;
+}
+
+.debug .banner_top .container-small {
+    height: 70%;
+    background-color: #ee82ee;
+}
+
+.debug section {
+    height: 400px;
+    background-color: white;
+    border: none;
+}
+
+.debug section .container {
+    height: 70%;
+}
+
+.debug section .w-60 {
+    background-color: #1e90ff;
+}
+
+.debug section .w-40 {
+    background-color: #ffc0cb;
+}
+
+.debug section#info2 {
+    background-color: #d3d3d3;
+}
+
+.debug .banner_bottom {
+    height: 500px;
+    background-color: #d3d3d3;
+    border: none;
+}
+
+.debug .banner_bottom .container {
+    height: 90%;
+    background-color: #228b22;
+}
+
+/* footer */
+.debug footer {
+    border: none;
+}
+
+.debug .footer_top {
+    height: 400px;
+    background-color: #23272a;
+    border: none;
+}
+
+.debug .footer_top .container {
+    height: 90%;
+    border: none;
+}
+
+.debug .footer_top .footer_small {
+    border: 1px dashed white;
+}
+
+.debug .footer_bottom {
+    height: 70px;
+    background-color: #23272a;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.debug .footer_bottom .container {
+    height: 80%;
+    background-color: #7fffd4;
+    border: none;
+}
+
+.debug .footer_bottom .logo_footer {
+    height: 20px;
+    width: 40px;
+    background-color: #ffb6c1;
+}
+
+.debug .footer_bottom .logo_footer::before {
+    content: "Logo";
+}
+
+.debug .footer_bottom .footer_btn {
+    height: 20px;
+    width: 60px;
+    background-color: #ffb6c1;
+}
+
+.debug .footer_bottom .footer_btn::before {
+    content: "Bottone";
+}
+/* #endregion debug */
+
+/* #region utilities */
+.d-flex {
+    display: flex;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.container-small {
+    width: 50%;
+    margin: auto;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-40 {
+    width: 40%;
+}
+/* #endregion utilities */
+
+/* #region header */
+.logo_header {
+    width: 25%;
+    padding-left: 0.5rem;
+    justify-content: start;
+    align-items: center;
+}
+
+nav {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 25%;
+    padding-right: 0.5rem;
+    justify-content: end;
+    align-items: center;
+}
+/* #endregion header */
+
+/* #region main */
+
+
+/* #endregion main */
+
+/* #region footer */
+.footer_top .container {
+    margin-top: 0.5%;
+}
+
+.footer_top .col-4 {
+    width: calc(100% / 12 * 4);
+    background-color: #f08080;
+}
+
+.footer_top .col-2 {
+    width: calc(100% / 12 * 2);
+    background-color: #20b2aa;
+}
+
+.footer_bottom .container {
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+/* #endregion footer*/ 
