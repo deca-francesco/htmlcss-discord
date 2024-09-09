@@ -48,7 +48,7 @@ p {
     --dis-btn-dark: #23272a;
     --dis-btn-colored: #8ea1e1;
     --dis-footer-bg-dark: #23272a;
-    --dis-footer-text-colored: #7288d9;
+    --dis-footer-text-colored: rgb(114, 136, 217);
 }
 /* #endregion common */
 
@@ -250,12 +250,6 @@ p {
     font-weight: bolder;
 }
 
-/* .divider {
-    background-image: url(../img/wave.svg);
-    background-position: center;
-    background-size: 300%;
-} */
-
 .icon {
     width: 1.5rem;
 }
@@ -264,7 +258,7 @@ p {
 /* #region header */
 header {
     background-color: var(--dis-header-bg-color);
-    padding: 1rem 0;
+    padding-bottom: 2rem;
 }
 
 .logo_header {
@@ -289,6 +283,7 @@ nav {
 
 button#login {
     background-color: var(--dis-btn-white);
+    padding: 0.5rem 0.8rem;
 }
 /* #endregion header */
 
@@ -371,13 +366,18 @@ footer .flag {
     display: block;
 }
 
-
 /* bottom */
 .footer_bottom .container {
     margin-bottom: 0;
     align-items: center;
     justify-content: space-between;
+    border-top: 2px solid rgba(114, 136, 217, 0.2);
 }
 
-
+.footer_bottom #sign_in {
+    background-color: var(--dis-footer-text-colored);
+    color: white;
+    padding: 0.5rem 0.7rem;
+    margin-right: 0;
+}
 /* #endregion footer*/ 
