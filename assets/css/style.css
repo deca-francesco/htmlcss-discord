@@ -19,8 +19,14 @@ h1 {
     font-size: 3rem;
 }
 
+h2 {
+    margin: 1.5rem 0;
+    font-size: 2rem;
+}
+
 p {
-    line-height: 1.7rem;
+    line-height: 1.3rem;
+    font-size: 0.8rem;
 }
 
 :root {
@@ -194,12 +200,21 @@ p {
     height: 100vh;
 }
 
+.vh-80 {
+    height: 80vh;
+}
+
+.vh-20 {
+    height: 20vh;
+}
+
 .w-60 {
     width: 60%;
 }
 
 .w-40 {
     width: 40%;
+    padding-left: 3rem;
 }
 
 .col-4 {
@@ -282,12 +297,13 @@ button#login {
     color: white;
 }
 
-/* item1 */
-/* #item1 {
-    background-image: url(../img/wave.svg);
-    background-position: center;
-    background-size: 300%;
-} */
+/* item2 */
+#item2 {
+    background-color: var(--dis-section-bg-grey);
+}
+
+/* banner bottom */
+
 
 /* #endregion main */
 
