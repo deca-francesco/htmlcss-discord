@@ -7,10 +7,20 @@
 
 body {
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
 }
 
 img {
     max-width: 100%;
+}
+
+h1 {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+p {
+    line-height: 1.7rem;
 }
 
 :root {
@@ -91,7 +101,7 @@ img {
     background-color: #ffc0cb;
 }
 
-.debug section#info2 {
+.debug section#item2 {
     background-color: #d3d3d3;
 }
 
@@ -122,8 +132,13 @@ img {
     border: none;
 }
 
-.debug .footer_top .footer_small {
+.debug .footer_top .col-4 {
+    background-color: #f08080;
+}
+
+.debug .footer_top .col-2 {
     border: 1px dashed white;
+    background-color: #20b2aa;
 }
 
 .debug .footer_bottom {
@@ -175,6 +190,10 @@ img {
     margin: auto;
 }
 
+.vh-100 {
+    height: 100vh;
+}
+
 .w-60 {
     width: 60%;
 }
@@ -183,10 +202,32 @@ img {
     width: 40%;
 }
 
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+
 .btn {
-    padding: 0.5rem 0.8rem;
+    padding: 0.8rem 1rem;
     border-radius: 1.5rem;
     border-style: none;
+    line-height: 1rem;
+    margin: 1rem;
+}
+
+.down-arrow {
+    transform: rotate(90deg);
+    display: inline-block;
+    font-weight: bolder;
+}
+
+.divider {
+    background-image: url(../img/wave.svg);
+    background-position: center;
+    background-size: 300%;
 }
 /* #endregion utilities */
 
@@ -227,23 +268,32 @@ button#login {
 /* #endregion header */
 
 /* #region main */
+/* banner top */
+.banner_top {
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 5rem 0;
+}
 
+.banner_top button#open_in_browser {
+    background-color: var(--dis-btn-dark);
+    color: white;
+}
+
+/* item1 */
+/* #item1 {
+    background-image: url(../img/wave.svg);
+    background-position: center;
+    background-size: 300%;
+} */
 
 /* #endregion main */
 
 /* #region footer */
 .footer_top .container {
     margin-top: 0.5%;
-}
-
-.footer_top .col-4 {
-    width: calc(100% / 12 * 4);
-    background-color: #f08080;
-}
-
-.footer_top .col-2 {
-    width: calc(100% / 12 * 2);
-    background-color: #20b2aa;
 }
 
 .footer_bottom .container {
