@@ -253,6 +253,19 @@ p {
 .icon {
     width: 1.5rem;
 }
+
+.wave {
+    background-image: url("../img/wave.svg");
+    height: 7rem;
+    opacity: 0.04;
+}
+
+.wave-rotated {
+    background-image: url("../img/wave.svg");
+    height: 7rem;
+    opacity: 0.04;
+    rotate: 180deg;
+}
 /* #endregion utilities */
 
 /* #region header */
