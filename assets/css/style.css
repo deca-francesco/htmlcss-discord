@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 img {
     max-width: 100%;
 }
@@ -13,11 +17,12 @@ img {
     --dis-header-bg-color: #3161e0;
     --dis-section-bg-white: white;
     --dis-section-bg-grey: #f6f6f6;
-    --dis-download-btn-bg-color: #8ea1e1;
+    --dis-btn-white: white;
+    --dis-btn-dark: #23272a;
+    --dis-btn-colored: #8ea1e1;
     --dis-footer-bg-dark: #23272a;
     --dis-footer-text-colored: #7288d9;
 }
-
 /* #endregion common */
 
 /* #region debug */
@@ -177,9 +182,20 @@ img {
 .w-40 {
     width: 40%;
 }
+
+.btn {
+    padding: 0.5rem 0.8rem;
+    border-radius: 1.5rem;
+    border-style: none;
+}
 /* #endregion utilities */
 
 /* #region header */
+header {
+    background-color: var(--dis-header-bg-color);
+    padding: 1rem 0;
+}
+
 .logo_header {
     width: 25%;
     padding-left: 0.5rem;
@@ -189,8 +205,13 @@ img {
 
 nav {
     width: 50%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
 }
 
 .login {
@@ -198,6 +219,10 @@ nav {
     padding-right: 0.5rem;
     justify-content: end;
     align-items: center;
+}
+
+button#login {
+    background-color: var(--dis-btn-white);
 }
 /* #endregion header */
 
