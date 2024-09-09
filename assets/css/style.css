@@ -9,6 +9,15 @@ img {
     max-width: 100%;
 }
 
+:root {
+    --dis-header-bg-color: #3161e0;
+    --dis-section-bg-white: white;
+    --dis-section-bg-grey: #f6f6f6;
+    --dis-download-btn-bg-color: #8ea1e1;
+    --dis-footer-bg-dark: #23272a;
+    --dis-footer-text-colored: #7288d9;
+}
+
 /* #endregion common */
 
 /* #region debug */
